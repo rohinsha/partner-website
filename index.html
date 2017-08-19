@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Rohinsha Gajbhiye - Web Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap css-->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery 1.11.3.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/bootstrap.min.js" ></script>
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+   	<!--Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    </head>
+   <body id="page-top" class="index">
+      <div class="fluid-container">
+        <header class="row hidden-xs"> 
+          <div class="col-sm-3 nav-col"><a href="">Logo</a></div>
+          <div class="col-sm-6 nav-col"> 
+            <ul>
+              <li><a href="">partner</a></li>
+              <li><a href="">driver</a></li>
+              <li><a href="">about/help</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 nav-col">
+            <ul>
+              <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-instagram"></span></a></li>
+              <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top hidden-sm hidden-md hidden-lg custom-nav ">
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" class="text-center center-block">LOGO</a>
+          </div>
+          <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">partner</a></li>
+            <li class="active"><a href="#">driver</a></li>
+            <li class="active"><a href="#">about/helps</a></li>
+          </ul>
+          <ul class="text-center">
+            <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-instagram"></span></a></li>
+            <li><a href="https://twitter.com/rohinshagajbhiy" target="_blank"><span class="fa fa-twitter"></span></a></li>
+          </ul>
+          </div>
+        </div>
+        <section id="landing-page" class="landing-page">
+          <div class="overlay"></div>
+          <div class="container">
+          <div class="intro-message">
+            <h1>Become Our Partner</h1>
+            <h3>We Value Our Partners</h3>
+            <button>Become a Partner</button>
+          </div>
+          </div>
+        </section>
+        <section class="intro-info">
+          <h2>Introduction</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus soluta possimus, tenetur similique quidem iste sunt! Dolores voluptatem a, impedit, in consequuntur temporibus soluta illo libero nostrum enim dolore at sit ea, natus suscipit dolorum minima quos iste labore ducimus quam. Delectus quae architecto, assumenda eius animi modi illo voluptate dignissimos, ab qui optio velit fugiat aliquam magni consequuntur consequatur expedita, quasi placeat harum ipsam accusamus. Suscipit voluptatem iste amet praesentium? Expedita accusamus in, id cumque adipisci est magnam vero velit magni, reprehenderit, voluptatibus, aspernatur eligendi incidunt quibusdam perspiciatis hic sequi. Error accusamus dolorem nostrum minus fugiat voluptatum, sapiente sit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus doloribus quo ab esse nesciunt, quasi in, veritatis officiis vel tenetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quisquam repellendus dignissimos nemo commodi tempore molestias, tenetur natus earum sapiente?</p>
+        </section>
+        <section class="responsive-banner img-responsive text-center" >
+          <img src="images/mockup.jpg" alt="">
+        </section>
+
+        <section class="form-partner text-center">
+        <h2>Become a Partner</h2>
+        <p>If you would like to partner with us,fill out the form below and one of our staff member will get back to you.</p>
+
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate firstname">
+                <label for="first_name">First Name</label>
+                <p><span class="emsg hidden" id="msg1">Please enter a Valid FirstName</span></p>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate lastname" >
+                <label for="last_name">Last Name</label>
+               <p><span class="emsg hidden" id="msg2">Please enter a valid LastName</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="email" type="email" class="validate email">
+                <label for="email">Email</label>
+                <p><span class="emsg hidden" id="msg3">Please enter a valid Email</span></p>
+              </div>
+              <div class="input-field col s6">
+                <input id="phone_number" type="number" class="validate number" >
+                <label for="phone_number">Phone number</label>
+                <p><span class="emsg hidden" id="msg4">Please enter a valid 10-digit phone number</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="address" type="text" class="validate address">
+                <label for="address">Address</label>
+                <p><span class="emsg hidden" id="msg5">Please enter a valid address</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="company_name" type="text" class="validate company" >
+                <label for="company_name">Company name or Organization</label>
+                <p><span class="emsg hidden" id="msg6">Please enter a valid company address</span></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="zip_code" type="text" class="validate zip-code" >
+                <label for="zip_code">Zip code</label>
+                <p><span class="emsg hidden" id="msg7">Please enter a valid 6-digit zip code</span></p>
+              </div>
+              <div class="input-field col s6">
+                <select class="browser-default" id="selectbox">
+                  <option value="" disabled="true" selected="true">Where did you hear about our company</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                  <option value="3">Option 3</option>
+                </select>
+                <p><span class="emsg hidden" id="msg8">Please select one option.</span></p>
+              </div>
+            </div>
+            <a href="#submit-successful" id="submit" class="waves-effect btn modal-trigger waves-orange submit">Submit</a>
+         </form>
+      <!-- Modal Structure -->
+      <div id="submit-successful" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+      </div>
+      <p class="text-center">By Submitting this form,you are agreeing to the <span class="highlight-text">Company Name Terms of Service </span></p>
+      </div>
+   
+    </div>
+  </section>
+
+  <div class="empty-block">
+  </div>
+</div>
+<!-- jQuery before Propeller.js -->
+<script src="js/materialize.min.js"> </script>
+<script src="js/custom.js"></script>
+</body>
+</html>
+
