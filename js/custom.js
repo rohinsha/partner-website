@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('select').material_select();
+  $('#submit-successful').modal({ show: false})
   var flagfname,flaglname,flagemail,flagzipcode,flagaddress,flagcontact,flagcompany,flagselect=false;
   var $regexname=/^([a-zA-Z]{3,16})$/;
   
@@ -109,6 +109,8 @@ var $number=/^([0-9]{10})$/;
 
 
 $("#submit").click(function() {
+
+  
   var selecttag=$("#selectbox").value;
     if (selecttag=="") {
       $('#msg8').removeClass('hidden');
@@ -124,7 +126,7 @@ $("#submit").click(function() {
 
   if((flagfname==true) && (flaglname==true) && (flagcontact==true) && (flagzipcode==true) && (flagcontact==true) && (flagcompany==true) && (flagselect==true)){
     alert("sucessful validation");
-    $('#submit-successful').modal('open');
+    $('#submit-successful').modal('show');
   }
 
   else {

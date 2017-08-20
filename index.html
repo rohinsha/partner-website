@@ -7,17 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap css-->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/jquery 1.11.3.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="js/bootstrap.min.js" ></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/materialize.min.css">
-   	<!--Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="style.css" rel="stylesheet">
-    </head>
+  <!-- jQuery before Propeller.js -->
+<script src="js/materialize.min.js"> </script>
+<script src="js/custom.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+<!--Google Icon Font-->
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="style.css" rel="stylesheet">
+</head>
    <body id="page-top" class="index">
       <div class="fluid-container">
         <header class="row hidden-xs"> 
@@ -87,7 +94,7 @@
           <form class="col s12">
             <div class="row">
               <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate firstname">
+                <input id="first_name" type="text" class="validate firstname"  required="" aria-required="true">
                 <label for="first_name">First Name</label>
                 <p><span class="emsg hidden" id="msg1">Please enter a Valid FirstName</span></p>
               </div>
@@ -129,7 +136,7 @@
                 <label for="zip_code">Zip code</label>
                 <p><span class="emsg hidden" id="msg7">Please enter a valid 6-digit zip code</span></p>
               </div>
-              <div class="input-field col s6">
+              <div class="col s6">
                 <select class="browser-default" id="selectbox">
                   <option value="" disabled="true" selected="true">Where did you hear about our company</option>
                   <option value="1">Option 1</option>
@@ -139,20 +146,32 @@
                 <p><span class="emsg hidden" id="msg8">Please select one option.</span></p>
               </div>
             </div>
-            <a href="#submit-successful" id="submit" class="waves-effect btn modal-trigger waves-orange submit">Submit</a>
+            
+            <button type="button" class="btn btn-info btn-lg submit" id="submit">SUBMIT</button>
          </form>
       <!-- Modal Structure -->
-      <div id="submit-successful" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+     <div id="submit-successful" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Partner Website</h4>
+      </div>
+      <div class="modal-body">
+        <p>HOLA!!!!!</p>
+        <p>Validation Successful</p>
       </div>
       <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
-      </div>
-      <p class="text-center">By Submitting this form,you are agreeing to the <span class="highlight-text">Company Name Terms of Service </span></p>
-      </div>
+    </div>
+
+  </div>
+</div>
+<p class="text-center">By Submitting this form,you are agreeing to the <span class="highlight-text">Company Name Terms of Service </span></p>
+</div>
    
     </div>
   </section>
@@ -161,8 +180,7 @@
   </div>
 </div>
 <!-- jQuery before Propeller.js -->
-<script src="js/materialize.min.js"> </script>
-<script src="js/custom.js"></script>
+
 </body>
 </html>
 

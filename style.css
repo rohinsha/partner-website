@@ -212,6 +212,10 @@ select:active{
   border-width: 0 0 1px 0;
 }
 
+select{
+  margin-top: 17px;
+}
+
 @media screen and (max-width: 991px) and (min-width: 768px) {
 .nav-col > ul > li {
 	padding: 25px 7px;
