@@ -127,6 +127,8 @@ $("#submit").click(function() {
   if((flagfname==true) && (flaglname==true) && (flagcontact==true) && (flagzipcode==true) && (flagcontact==true) && (flagcompany==true) && (flagselect==true)){
     alert("sucessful validation");
     $('#submit-successful').modal('show');
+      $("form").trigger("reset");
+
   }
 
   else {
